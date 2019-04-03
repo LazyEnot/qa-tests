@@ -37,7 +37,7 @@ done
 
 finalOutput="./out/original.xml"
 
-for (( i=0; i<=${rerunCount}; i++ ))
+for (( i=1; i<=${rerunCount}; i++ ))
 do
     currOutput=" ./out/rerun${i}.xml"
     finalOutput+=${currOutput}
