@@ -15,6 +15,6 @@ By default there is no parallelisation. To run tests in parallel just define `--
 
 ## Virtual screen parameters
 To change virtual screen parameters use environment variables:
-*`SCREEN_WIDTH` (default - 1920)
-*`SCREEN_HEIGHT` (default - 1080)
-*`SCREEN_DEPTH` (default - 16)
+* `SCREEN_WIDTH` (default - 1920)
+* `SCREEN_HEIGHT` (default - 1080)
+* `SCREEN_DEPTH` (default - 16)
