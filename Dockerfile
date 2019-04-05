@@ -34,4 +34,4 @@ RUN apk update ;\
     # Cleanup
     rm -rf /var/cache/apk/* /tmp/requirements.txt
 
-ENTRYPOINT [ "/opt/bin/entry_point.sh" ]
+CMD [ "/opt/bin/entry_point.sh" ]
