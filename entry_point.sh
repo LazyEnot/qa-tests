@@ -3,7 +3,7 @@
 function start_tests () {
     if [[ ${PROCESSES} -eq 1 ]]
     then
-        robot --verbose "$@"
+        robot "$@"
     else
         pabot --verbose --processes ${PROCESSES} "$@"
     fi
