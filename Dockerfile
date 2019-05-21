@@ -25,7 +25,6 @@ COPY entry_point.sh /opt/bin/entry_point.sh
 
 RUN apk update ;\
     apk add --no-cache ${DEPS} ;\
-    ls ;\
     pip install --no-cache-dir ${REQS} ;\
     # Chrome requires docker to have cap_add: SYS_ADMIN if sandbox is on.
     # Disabling sandbox and gpu as default.
