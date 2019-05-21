@@ -16,8 +16,9 @@ ENV DEPS="\
 ENV REQS="\
     robotframework==3.1.1 \
     robotframework-seleniumlibrary==3.3.1 \
-    selenium==3.14.0 \
-    robotframework-pabot==0.46 \
+    selenium==3.141.0 \
+    robotframework-pabot==0.53 \
+    robotframework-jsonvalidator=1.0.1
 "
 
 COPY entry_point.sh /opt/bin/entry_point.sh
