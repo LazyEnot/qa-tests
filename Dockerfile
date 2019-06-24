@@ -14,11 +14,13 @@ ENV DEPS="\
     bash \
 "
 ENV REQS="\
-    robotframework==3.1.1 \
-    robotframework-seleniumlibrary==3.3.1 \
-    selenium==3.141.0 \
-    robotframework-pabot==0.53 \
+    robotframework==3.1.2 \
+    robotframework-seleniumlibrary==4.0.0a1 \
+    robotframework-pabot==0.71 \
     robotframework-jsonvalidator==1.0.1 \
+    robotframework-requests==0.5.0 \
+    selenium==3.141.0 \
+    requests==2.22.0 \
 "
 
 COPY entry_point.sh /opt/bin/entry_point.sh
