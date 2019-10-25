@@ -21,7 +21,7 @@ rerunCount=0
 
 if [[ ${retCode} -gt 0 ]] && [[ ${rerunCount} -lt ${MAX_RERUNS} ]]
 then
-    start_tests --noncritical non-critical -v BROWSER:${BROWSER} -v PAGE:${PAGE} --rerunfailed ./out/original.xml --outputDir ./out --output rerun1.xml tests/
+    start_tests --noncritical non-critical -v BROWSER:${BROWSER} -v PAGE:${PAGE} --rerunfailedsuites ./out/original.xml --outputDir ./out --output rerun1.xml tests/
     retCode=$?
     let rerunCount++
     rerunNext=2
@@ -29,7 +29,7 @@ fi
 
 while [[ ${retCode} -gt 0 ]] && [[ ${rerunCount} -lt ${MAX_RERUNS} ]]
 do
-    start_tests --noncritical non-critical -v BROWSER:${BROWSER} -v PAGE:${PAGE} --rerunfailed ./out/rerun${rerunCount}.xml --outputDir ./out --output rerun${rerunNext}.xml tests/
+    start_tests --noncritical non-critical -v BROWSER:${BROWSER} -v PAGE:${PAGE} --rerunfailedsuites ./out/rerun${rerunCount}.xml --outputDir ./out --output rerun${rerunNext}.xml tests/
     retCode=$?
     let rerunCount++
     let rerunNext++
