@@ -23,6 +23,8 @@ ENV REQS="\
     requests==2.22.0 \
 "
 
+USER tester:qa
+
 COPY entry_point.sh /opt/bin/entry_point.sh
 
 RUN apk update ;\
