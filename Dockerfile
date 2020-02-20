@@ -23,7 +23,7 @@ ENV REQS="\
     requests==2.22.0 \
 "
 
-USER tester:qa
+USER runner
 
 COPY entry_point.sh /opt/bin/entry_point.sh
 
