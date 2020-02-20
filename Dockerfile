@@ -23,7 +23,8 @@ ENV REQS="\
     requests==2.22.0 \
 "
 
-USER runner
+RUN adduser --disabled-password --no-create-home --uid 666 runner
+USER 666
 
 COPY entry_point.sh /opt/bin/entry_point.sh
 
