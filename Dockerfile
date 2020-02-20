@@ -23,9 +23,6 @@ ENV REQS="\
     requests==2.22.0 \
 "
 
-RUN adduser --disabled-password --no-create-home --uid 666 runner
-USER 666
-
 COPY entry_point.sh /opt/bin/entry_point.sh
 
 RUN apk update ;\
@@ -39,5 +36,8 @@ RUN apk update ;\
     pip freeze ;\
     # Cleanup
     rm -rf /var/cache/apk/* /tmp/requirements.txt
+
+RUN adduser --disabled-password --no-create-home --uid 666 runner
+USER 666
 
 CMD [ "/opt/bin/entry_point.sh" ]
