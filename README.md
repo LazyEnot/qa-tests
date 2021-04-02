@@ -3,7 +3,7 @@
 ## Simple usage
 To run tests simply use command:
 ```bash
-docker run -it --shm-size=3g -v `pwd`/tests:/tests:ro -v `pwd`/reports:/out:rw --env PAGE=http://site.com/ getintent/qa-tests:latest
+docker run -it --shm-size=3g -v `pwd`/tests:/tests:ro -v `pwd`/reports:/out:rw --env PAGE=http://site.com/ lazyenot/qa-tests:latest
 ```
 It is recommended to define `${PAGE}  %{PAGE}` in your robot variables and then use `${PAGE}` in test cases.
 
